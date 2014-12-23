@@ -85,7 +85,7 @@ module.exports = function(redis, logger) {
               if (err) {
                 cb(err);
               }
-              redis.expire(token_key, 60, function(err, resp2) {
+              redis.expire(token_key, 120, function(err, resp2) {
                 if (err) {
                   cb(err);
                 }
